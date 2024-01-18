@@ -24,9 +24,9 @@ for (let i = 0; i < certificationsList.length; i++) {
     let textElement = certificationsList[i].querySelector(TITLE)
     let competencesElement = certificationsList[i].querySelector(COMPETENCE)
 
-    let text = StringFormatter.formatTitle(textElement)
+    let text = formatTitle(textElement)
     let link = certificationsList[i].querySelector(LINK)
-    let competences = StringFormatter.formatCompetences(competencesElement)
+    let competences = formatCompetences(competencesElement)
 
     jsonList.push({
         text,
